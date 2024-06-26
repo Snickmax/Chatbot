@@ -34,10 +34,12 @@
         }
         .bot-message {
             color: blue;
+            white-space: pre-line; /* This will allow displaying \n as line breaks */
         }
         .user-message {
             color: green;
             text-align: right;
+            white-space: pre-line;
         }
         #input-container {
             display: flex;
@@ -101,7 +103,7 @@
                 // Add bot's response to the chat
                 const botMessageDiv = document.createElement('div');
                 botMessageDiv.className = 'bot-message';
-                botMessageDiv.textContent = data.response;
+                botMessageDiv.innerHTML = data.response.replace(/\n/g, '<br>'); // Replace \n with <br>
                 messagesContainer.appendChild(botMessageDiv);
 
                 // Scroll to the bottom
