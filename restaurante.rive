@@ -1,45 +1,30 @@
-+ hola
-- Hola, Soy un robot, esta es la informacion que te puedo ofrecer\n
-^ Nuestros telefonos\n
-^ Nuestra direccion\n
-^ Entregas\n
-^ Pagina web\n
-^ Horarios\n
-^ Menu\n
+! var lunes = Series del Lunes\n
+^ RE:MONSTER
+^ TRAIN OF THE END OF THE WORLD
 
-! var lunes = Menu del Lunes\n 
-^ Chiles en nogada 20.50\n 
-^ Chilaquiles 15.50\n
+! var martes = Series del Martes
+^ UNNAMED MEMORY
+^ OBLIVION BATTERY
 
-! var martes = Menu del Martes \n
-^ Pambasos 20.50 \n
-^ Huitlacoche 15.50 \n
+! var miercoles = Series del Miércoles
+^ DATE A LIVE V
+^ KONOSUBA 3
 
-! var miercoles = Menu del Miercoles \n
-^ Enchiladas 120.50 \n
-^ Caldo de olla 15.50 \n
+! var jueves = Series del Jueves
+^ YURU CAMP SEASON 3
+^ WIND BREAKER
 
-! var jueves = Menu del Jueves \n
-^ Tacos 120.50 \n
-^ Quesadillas 15.50 \n
+! var viernes = Series del Viernes
+^ THAT TIME I GOT REINCARNATED AS A SLIME SEASON 3
+^ THE IDOLM@STER SHINY COLORS
 
-! var viernes = Menu del Viernes \n
-^ Tortas 20.50 \n
-^ Tacos 15.50 \n
+! var sabado = Series del Sábado
+^ MY HERO ACADEMIA SEASON 7
+^ KAIJU NO. 8
 
-! var sabado = Menu del Sabado \n
-^ Enchiladas 120.50 \n
-^ Huitlacoche 15.50 \n
-
-! var domingo = Los domingo esta cerrado
-
-! var horario = Lunes abrimos de 08:00 a 18:00\n
-^ Martes abrimos de 08:00 a 18:00\n
-^ Miercoles abrimos de 08:00 a 18:00\n
-^ Jueves abrimos de 08:00 a 18:00\n
-^ Viernes abrimos de 08:00 a 18:00\n
-^ Sabados abrimos de 08:00 a 12:00\n
-^ Domingos Cerrado\n
+! var domingo = Series del Domingo
+^ CAPTAIN SUBASA
+^ THE DUKE OF DEATH AND HIS MAID SEASON 3
 
 + [*] lunes{weight=2} [*]
 - <bot lunes>
@@ -62,32 +47,14 @@
 + [*] domingo{weight=2} [*]
 - <bot domingo>
 
++ no me des las series del (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]{weight=5}
+- Claro, ¿de cuál día deseas ver los estrenos?
 
-+ [*] (menu|carta) [*]
-- <bot lunes> \n <bot martes> \n <bot miercoles> \n <bot jueves> \n <bot viernes> \n <bot sabado> \n <bot domingo>
++ no quiero saber las series del (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]{weight=5}
+- Claro, ¿de cuál día deseas ver los estrenos?
 
-+ como estas
-@ hola
-
-+ hay alguien*
-@ hola
-
-+ [*] (telefono|celular|cel) [*]
-- Nuestro telefono es 725648221
-
-+ [*] (direccion|ubicacion|lugar) [*]
-- Nuestra direccion Colonia Emiliano Zapata Acapulco Gro
-- Nos encontramos ubicados en la Colonia Emiliano Zapata Acapulco Gro
-
-+ [*] (entregas|a domicilio) [*]
-- Realizamos entregas a domicilio solo de lunes a viernes de 12:00 a 15:00
-
-+ [*] (pagina web|web|pagina) [*]
-- Visitanos en https://www.programadornovato.com
-
-+ [*] (hora|horarios|dias|abierto){weight=3} [*]
-- <bot horario>
-
++ [*] (series|animacion|estrenos) [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) y no [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]{weight=5}
+- Entiendo que no deseas ver series de esos días. ¿De qué día te gustaría ver los estrenos?
 
 + *
 - Recuerda que soy un robot, me podrías preguntar de otra forma
