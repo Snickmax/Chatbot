@@ -1,3 +1,3 @@
 # Chatbot
 instalas todo con:
-pip freeze > requirements.txt
+pip install -r requirements.txt
