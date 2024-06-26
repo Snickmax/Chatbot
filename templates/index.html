@@ -34,7 +34,7 @@
         }
         .bot-message {
             color: blue;
-            white-space: pre-line; /* This will allow displaying \n as line breaks */
+            white-space: pre-line;
         }
         .user-message {
             color: green;
@@ -84,13 +84,10 @@
             userMessageDiv.textContent = message;
             messagesContainer.appendChild(userMessageDiv);
 
-            // Scroll to the bottom
             messagesContainer.scrollTop = messagesContainer.scrollHeight;
 
-            // Clear input
             messageInput.value = '';
 
-            // Send message to the server
             fetch('/app/', {
                 method: 'POST',
                 headers: {
@@ -100,13 +97,11 @@
             })
             .then(response => response.json())
             .then(data => {
-                // Add bot's response to the chat
                 const botMessageDiv = document.createElement('div');
                 botMessageDiv.className = 'bot-message';
-                botMessageDiv.innerHTML = data.response.replace(/\n/g, '<br>'); // Replace \n with <br>
+                botMessageDiv.innerHTML = data.response.replace(/\n/g, '<br>');
                 messagesContainer.appendChild(botMessageDiv);
 
-                // Scroll to the bottom
                 messagesContainer.scrollTop = messagesContainer.scrollHeight;
             })
             .catch(error => {
