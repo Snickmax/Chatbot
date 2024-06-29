@@ -1,3 +1,5 @@
+! version = 2.0
+
 ! var lunes = Series del Lunes\n
 ^ RE:MONSTER\n
 ^ TRAIN OF THE END OF THE WORLD
@@ -97,6 +99,27 @@
 
 + [*] (series|animacion|estrenos) [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) y no [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]{weight=5}
 - Entiendo que no deseas ver series de esos días. ¿De qué día te gustaría ver los estrenos?
+
+! var trivia_pregunta_1 = ¿Cuál es el nombre del protagonista de My Hero Academia?
+
++ quiero jugar a la trivia
+- {topic=trivia} ¡Genial! Aquí va la primera pregunta: <bot trivia_pregunta_1>
+
+> topic trivia
+
+    + izuku midoriya
+    - ¡Correcto! Izuku Midoriya es el protagonista de My Hero Academia.
+    ^ {topic=random}
+
+    + salir de trivia
+    - Has salido del modo trivia.
+    ^ {topic=random}
+
+    + *
+    - Incorrecto. La respuesta correcta es Izuku Midoriya.
+    ^ {topic=random}
+
+< topic
 
 + *
 - Recuerda que soy un robot, me podrías preguntar de otra forma

@@ -19,6 +19,8 @@ def webhook_whatsapp():
         respuesta = bot.reply("localuser", mensaje)
         respuesta = respuesta.replace("\\n", "\\\n").replace("\\", "")
 
+        print(respuesta)
+        print(mensaje)
         return jsonify({"response": respuesta})
 
     return jsonify({"response": "No message received"})
