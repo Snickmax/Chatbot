@@ -1,74 +1,50 @@
 ! version = 2.0
 
-! var lunes = Series del Lunes\n
-^ RE:MONSTER\n
-^ TRAIN OF THE END OF THE WORLD
++ hola
+- Hola, esta es la información que te puedo ofrecer sobre nuestro restaurante\n
+^ Nuestros telefonos\n
+^ Nuestra direccion\n
+^ Entregas\n
+^ Pagina web\n
+^ Horarios\n
+^ Menu\n
 
-! var martes = Series del Martes\n
-^ UNNAMED MEMORY\n
-^ OBLIVION BATTERY
+! var lunes = Menu del Lunes\n 
+^ Pollo a la plancha con puré $ 5.000 \n 
+^ Completos italianos $ 2.500 \n
 
-! var miercoles = Series del Miércoles\n
-^ DATE A LIVE V\n
-^ KONOSUBA 3
+! var martes = Menu del Martes \n
+^ Empanadas de carne $ 2.000 \n
+^ Arroz con carne a la olla $ 8.000 \n
 
-! var jueves = Series del Jueves\n
-^ YURU CAMP SEASON 3\n
-^ WIND BREAKER
+! var miercoles = Menu del Miercoles \n
+^ Ensalada chilena con pollo $ 5.500 \n
+^ Pescado frito con arroz $ 8.000 \n
 
-! var viernes = Series del Viernes\n
-^ THAT TIME I GOT REINCARNATED AS A SLIME SEASON 3\n
-^ THE IDOLM@STER SHINY COLORS
+! var jueves = Menu del Jueves \n
+^ Bistec a lo pobre $ 7.500 \n
+^ Caldillo de congrio $ 5.000 \n
 
-! var sabado = Series del Sábado\n
-^ MY HERO ACADEMIA SEASON 7\n
-^ KAIJU NO. 8
+! var viernes = Menu del Viernes \n
+^ Lasaña $ 5.000 \n
+^ Pizza $ 6.000 \n
 
-! var domingo = Series del Domingo\n
-^ CAPTAIN SUBASA\n
-^ THE DUKE OF DEATH AND HIS MAID SEASON 3
+! var sabado = Menu del Sabado \n
+^ Cuarto de pollo con papas $ 7.000 \n
+^ Fideos con pollo asado $ 6.500 \n
 
-+ [*] (cuentame mas|de que trata|cuentame sobre) re monster [*]
-- Cuando un joven comienza una nueva vida como un humilde duende, supera todos los obstáculos con una combinación de fuerza, inteligencia y un apetito monstruoso en este manga shonen de fantasía lleno de acción. Tomokui Kanata ha sufrido una muerte prematura, pero sus aventuras están lejos de terminar.
+! var domingo = Los domingo esta cerrado
 
-+ [*] (cuentame mas|de que trata|cuentame sobre) train of the end of the world [*]
-- En un pueblo rural aparentemente normal, algo extraño les ocurre a sus habitantes. Pese a ello, Shizuru Chikura está más preocupada por su amiga desaparecida. Decididas a encontrarla, Shizuru y otras tres chicas suben a un tren abandonado y parten hacia el mundo exterior sin saber si lograrán volver con vida.
+! var horario = Lunes abrimos de 08:00 a 18:00\n
+^ Martes abrimos de 08:00 a 18:00\n
+^ Miercoles abrimos de 08:00 a 18:00\n
+^ Jueves abrimos de 08:00 a 18:00\n
+^ Viernes abrimos de 08:00 a 18:00\n
+^ Sabados abrimos de 08:00 a 12:00\n
+^ Domingos Cerrado\n
 
-+ [*] (cuentame mas|de que trata|cuentame sobre) unnamed memory [*]
-- La historia se centra en la relación entre el noble príncipe Oscar y la poderosa e inmortal bruja Tinasha. Oscar ha sido maldecido desde su infancia y nunca podrá crear descendencia, por lo que busca a la calamitosa bruja Tinasha para encontrar una forma de romper su maldición, cumpliendo los retos de su calabozo.
-
-+ [*] (cuentame mas|de que trata|cuentame sobre) oblivion battery [*]
-- Kei y Haruka forman una batería prodigiosa e invencible en secundaria y tienen un futuro brillante, pero parece que Kei ha perdido la memoria y se van a una escuela donde no tienen equipo de béisbol. ¿Jugamos juntos?
-
-+ [*] (cuentame mas|de que trata|cuentame sobre) date a live [*]
-- Date a Live es una serie anime que se ambienta en un mundo donde el continente euroasiático fue devastado por un 'terremoto espacial' que resultó en la muerte de más de 150 millones de personas. Desde entonces, no han parado de ocurrir estos terremotos que han estado asolando el mundo.
-
-+ [*] (cuentame mas|de que trata|cuentame sobre) konosuba [*]
-- La serie sigue a Kazuma Satō, un joven otaku que es enviado a un mundo de fantasía con elementos similares a los videojuegos MMORPG después de su muerte (en un ridículo accidente), donde se forma un grupo disfuncional con una diosa, una archimaga y una paladín.
-
-+ [*] (cuentame mas|de que trata|cuentame sobre) [*] (yuru camp|laid camp) [*]
-- Nadeshiko es una estudiante de preparatoria que se ha mudado de Shizuoka a Yamanashi y que decide ir a ver el famoso monte Fuji que aparece en los billetes de mil yenes. Aunque consigue llegar en bicicleta hasta Motosu, se ve obligada a volver atrás debido al mal tiempo.
-
-+ [*] (cuentame mas|de que trata|cuentame sobre) wind breaker [*]
-- El instituto Fûrin se ha granjeado la peor reputación entre los centros de la zona por tener la media más baja y los alumnos más rebeldes. Haruka Sakura es un joven recién llegado a la ciudad que quiere convertirse en el más fuerte del barrio y así proteger a todos aquellos que le importan. Para conseguir su propósito, lo primero que debe hacer es unirse a una pandilla llamada Wind Breaker, que representa a su instituto y cuyo objetivo es defender la ciudad del resto de bandas y maleantes. Sin embargo, ¡para que lo acepten deberá ganarse el respeto a puñetazos!
-
-+ [*] (cuentame mas|de que trata|cuentame sobre) [*] (that time i got reincarnated as a slime|tensei shitara slime datta ken) [*]
-- La serie relata la historia de Satoru Mikami, un asalariado de 37 años que es asesinado tras ser apuñalado por un ladrón y se reencarna en un mundo de espadas y magia como un Slime con poderes únicos y reúne aliados para construir su propia nación de monstruos.
-
-+ [*] (cuentame mas|de que trata|cuentame sobre) the idolmaster shiny colors [*]
-- Los jugadores del juego entrenan a ídolos y compiten contra otros productores/jugadores en línea en conciertos en vivo.
-
-+ [*] (cuentame mas|de que trata|cuentame sobre) [*] (my hero academia|boku no hero) [*]
-- La historia está ambientada en un mundo donde parte de la población ha desarrollado superpoderes, lo que les separa en dos grupos diferenciados: héroes y villanos. Ahí encontramos al protagonista Izuku Midoriya, que seguirá los pasos de su ídolo All Might para convertirse en el mejor superhéroe de todos los tiempos.
-
-+ [*] (cuentame mas|de que trata|cuentame sobre) kaiju no 8 [*]
-- Japón tiene un problema con los Kaijus, unas criaturas monstruosas que emergen y destruyen todo lo que encuentran por su paso. Mientras las Fuerzas de Defensa se encargan de hacerles frente, hay personas como Kafka Hibino que se dedican a limpiar la ciudad de cadáveres.
-
-+ [*] (cuentame mas|de que trata|cuentame sobre) captain tsubasa [*]
-- Tsubasa Ōzora es un estudiante de primaria de 11 años que le encanta jugar al fútbol y sueña con algún día ganar la Copa Mundial de Fútbol para Japón. Vive con su madre en Japón, mientras que su padre es un capitán de barco que viaja por todo el mundo.
-
-+ [*] (cuentame mas|de que trata|cuentame sobre) [*] (the duke of death and his maid|shinigami bocchan to kuro maid) [*]
-- Sigue la historia de un joven duque que fue maldecido por una bruja cuando era niño, obteniendo el poder de matar a cualquier ser vivo cuando lo toca. Por lo que es obligado a vivir en una gran mansión en lo profundo del bosque y tratado como si no existiera.
++ [*] no{weight=3} [*]
+- <bot no>
 
 + [*] lunes{weight=2} [*]
 - <bot lunes>
@@ -91,36 +67,24 @@
 + [*] domingo{weight=2} [*]
 - <bot domingo>
 
-+ no me des las series del (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]{weight=5}
-- Claro, ¿de cuál día deseas ver los estrenos?
++ [*] (menu|carta) [*]
+- <bot lunes> \n <bot martes> \n <bot miercoles> \n <bot jueves> \n <bot viernes> \n <bot sabado> \n <bot domingo>
 
-+ no quiero saber las series del (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]{weight=5}
-- Claro, ¿de cuál día deseas ver los estrenos?
++ [*] (telefono|celular|cel) [*]
+- Nuestro telefono es +569 42817429
 
-+ [*] (series|animacion|estrenos) [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) y no [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]{weight=5}
-- Entiendo que no deseas ver series de esos días. ¿De qué día te gustaría ver los estrenos?
++ [*] (direccion|ubicacion|lugar) [*]
+- Nuestra direccion Colonia Alpino #3214
+- Nos encontramos ubicados en la Colonia Alpino #3214
 
-! var trivia_pregunta_1 = ¿Cuál es el nombre del protagonista de My Hero Academia?
++ [*] (entregas|a domicilio) [*]
+- Realizamos entregas a domicilio solo de lunes a viernes de 12:00 a 15:00
 
-+ quiero jugar a la trivia
-- {topic=trivia} ¡Genial! Aquí va la primera pregunta: <bot trivia_pregunta_1>
++ [*] (pagina web|web|pagina) [*]
+- Visitanos en https://www.picada-animal.cl
 
-> topic trivia
++ [*] (hora|horarios|dias|abierto){weight=3} [*]
+- <bot horario>
 
-    + izuku midoriya
-    - ¡Correcto! Izuku Midoriya es el protagonista de My Hero Academia.
-    ^ {topic=random}
-
-    + salir de trivia
-    - Has salido del modo trivia.
-    ^ {topic=random}
-
-    + *
-    - Incorrecto. La respuesta correcta es Izuku Midoriya.
-    ^ {topic=random}
-
-< topic
-
-+ *
-- Recuerda que soy un robot, me podrías preguntar de otra forma
-- Intenta hacer tu pregunta de otra manera.
++ no [*] (menu|carta) [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]{weight=6}
+- Entiendo, de que dia te gustaria ver la carta ?
