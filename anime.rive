@@ -1,30 +1,30 @@
 ! version = 2.0
 
-! var lunes = Series del Lunes\n
+! var lunesanime = Series del Lunes\n
 ^ RE:MONSTER\n
 ^ TRAIN OF THE END OF THE WORLD
 
-! var martes = Series del Martes\n
+! var martesanime = Series del Martes\n
 ^ UNNAMED MEMORY\n
 ^ OBLIVION BATTERY
 
-! var miercoles = Series del Miércoles\n
+! var miercolesanime = Series del Miércoles\n
 ^ DATE A LIVE V\n
 ^ KONOSUBA 3
 
-! var jueves = Series del Jueves\n
+! var juevesanime = Series del Jueves\n
 ^ YURU CAMP SEASON 3\n
 ^ WIND BREAKER
 
-! var viernes = Series del Viernes\n
+! var viernesanime = Series del Viernes\n
 ^ THAT TIME I GOT REINCARNATED AS A SLIME SEASON 3\n
 ^ THE IDOLM@STER SHINY COLORS
 
-! var sabado = Series del Sábado\n
+! var sabadoanime = Series del Sábado\n
 ^ MY HERO ACADEMIA SEASON 7\n
 ^ KAIJU NO. 8
 
-! var domingo = Series del Domingo\n
+! var domingoanime = Series del Domingo\n
 ^ CAPTAIN SUBASA\n
 ^ THE DUKE OF DEATH AND HIS MAID SEASON 3
 
@@ -70,26 +70,26 @@
 + [*] (cuentame mas|de que trata|cuentame sobre) [*] (the duke of death and his maid|shinigami bocchan to kuro maid) [*]
 - Sigue la historia de un joven duque que fue maldecido por una bruja cuando era niño, obteniendo el poder de matar a cualquier ser vivo cuando lo toca. Por lo que es obligado a vivir en una gran mansión en lo profundo del bosque y tratado como si no existiera.
 
-+ [*] lunes{weight=2} [*]
-- <bot lunes>
++ [*] (anime|series) [*] lunes{weight=10} [*]
+- <bot lunesanime>
 
-+ [*] martes{weight=2} [*]
-- <bot martes>
++ [*] (anime|series) [*] martes{weight=2} [*]
+- <bot martesanime>
 
-+ [*] miercoles{weight=2} [*]
-- <bot miercoles>
++ [*] (anime|series) [*] miercoles{weight=2} [*]
+- <bot miercolesanime>
 
-+ [*] jueves{weight=2} [*]
-- <bot jueves>
++ [*] (anime|series) [*] jueves{weight=2} [*]
+- <bot juevesanime>
 
-+ [*] viernes{weight=2} [*]
-- <bot viernes>
++ [*] (anime|series) [*] viernes{weight=2} [*]
+- <bot viernesanime>
 
-+ [*] sabado{weight=2} [*]
-- <bot sabado>
++ [*] (anime|series) [*] sabado{weight=2} [*]
+- <bot sabadoanime>
 
-+ [*] domingo{weight=2} [*]
-- <bot domingo>
++ [*] (anime|series) [*] domingo{weight=2} [*]
+- <bot domingoanime>
 
 + no me des las series del (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]{weight=5}
 - Claro, ¿de cuál día deseas ver los estrenos?
