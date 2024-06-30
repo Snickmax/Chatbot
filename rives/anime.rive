@@ -101,6 +101,9 @@
 - Entiendo que no deseas ver series de esos días. ¿De qué día te gustaría ver los estrenos?
 
 ! var trivia_pregunta_1 = ¿Cuál es el nombre del protagonista de My Hero Academia?
+! var trivia_pregunta_2 = ¿De qué color es el cabello de Nadeshiko Kagamihara de Yuru Camp?
+! var trivia_pregunta_3 = ¿Aqua de Konosuba es una diosa inútil?
+! var trivia_pregunta_4 = ¿De qué género es el anime Blue Lock?
 
 + quiero jugar a la trivia
 - {topic=trivia} ¡Genial! Aquí va la primera pregunta: <bot trivia_pregunta_1>
@@ -108,20 +111,74 @@
 > topic trivia
 
     + (izuku midoriya|izuku)
-    - ¡Correcto! Izuku Midoriya es el protagonista de My Hero Academia.
-    ^ {topic=random}
+    - ¡Correcto! Izuku Midoriya es el protagonista de My Hero Academia.\n\n {topic=trivia2} {@ comenzar2}
 
-    + (midoriya)
+    + midoriya
     - !Casi! Midoriya es el apellido del protagonista de My Hero Academia. La respuesta correcta es Izuku Midoriya.
     ^ {topic=random}
 
-    + salir de trivia
+    + deku
+    - !Casi! Deku es el apodo de heroe del protagonista de My Hero Academia. La respuesta correcta es Izuku Midoriya.
+    ^ {topic=random}
+
+    + salir [*] trivia
     - Has salido del modo trivia.
     ^ {topic=random}
 
     + *
-    - Incorrecto. La respuesta correcta es Izuku Midoriya.
+    - Incorrecto. Vuelve a intentarlo.
+
+< topic
+
+> topic trivia2
+
+    + comenzar2
+    - Vamos con la segunda pregunta: <bot trivia_pregunta_2>
+
+    + rosado
+    - Correcto! El cabello de Nadeshiko es de color rosado.\n\n {topic=trivia3} {@ comenzar3}
+
+    + salir [*] trivia
+    - Has salido del modo trivia.
     ^ {topic=random}
+
+    + *
+    - Incorrecto. Vuelve a intentarlo.
+
+< topic
+
+> topic trivia3
+
+    + comenzar3
+    - Vamos con la tercera pregunta: <bot trivia_pregunta_3>
+
+    + si
+    - Correcto! Aqua es una diosa inútil. {topic=trivia4} {@ comenzar4}
+
+    + salir [*] trivia
+    - Has salido del modo trivia.
+    ^ {topic=random}
+
+    + *
+    - Incorrecto. Vuelve a intentarlo.
+
+< topic
+
+> topic trivia4
+
+    + comenzar4
+    - Vamos con la cuarta pregunta: <bot trivia_pregunta_4>
+
+    + deportes
+    - Correcto! Blue Lock es un anime del género deportes \n\n Saliendo de la trivia...
+    ^ {topic=random}
+
+    + salir [*] trivia
+    - Has salido del modo trivia.
+    ^ {topic=random}
+
+    + *
+    - Incorrecto. Vuelve a intentarlo.
 
 < topic
 
