@@ -2,6 +2,11 @@ from flask import Flask, jsonify, request, render_template
 from rivescript import RiveScript
 
 app = Flask(__name__)
+bot = RiveScript()
+bot.load_file('rives/anime.rive')
+bot.load_file('rives/restaurante.rive')
+bot.load_file('rives/pelis.rive')
+bot.sort_replies()
 
 @app.route("/")
 def index():
@@ -13,11 +18,6 @@ def webhook_whatsapp():
     mensaje = data.get('message', '')
 
     if mensaje:
-        bot = RiveScript()
-        bot.load_file('rives/anime.rive')
-        bot.load_file('rives/restaurante.rive')
-        bot.load_file('rives/pelis.rive')
-        bot.sort_replies()
         respuesta = bot.reply("localuser", mensaje)
         respuesta = respuesta.replace("\\n", "\\\n").replace("\\", "")
 

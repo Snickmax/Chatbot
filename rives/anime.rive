@@ -107,8 +107,12 @@
 
 > topic trivia
 
-    + izuku midoriya
+    + (izuku midoriya|izuku)
     - ¡Correcto! Izuku Midoriya es el protagonista de My Hero Academia.
+    ^ {topic=random}
+
+    + (midoriya)
+    - !Casi! Midoriya es el apellido del protagonista de My Hero Academia. La respuesta correcta es Izuku Midoriya.
     ^ {topic=random}
 
     + salir de trivia
