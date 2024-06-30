@@ -14,9 +14,9 @@ def webhook_whatsapp():
 
     if mensaje:
         bot = RiveScript()
-        bot.load_file('anime.rive')
-        bot.load_file('restaurante.rive')
-        bot.load_file('pelis.rive')
+        bot.load_file('rives/anime.rive')
+        bot.load_file('rives/restaurante.rive')
+        bot.load_file('rives/pelis.rive')
         bot.sort_replies()
         respuesta = bot.reply("localuser", mensaje)
         respuesta = respuesta.replace("\\n", "\\\n").replace("\\", "")
