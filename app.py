@@ -3,6 +3,7 @@ from rivescript import RiveScript
 
 app = Flask(__name__)
 bot = RiveScript()
+bot.load_file('rives/inicio.rive')
 bot.load_file('rives/anime.rive')
 bot.load_file('rives/restaurante.rive')
 bot.load_file('rives/pelis.rive')

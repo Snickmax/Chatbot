@@ -1,90 +1,96 @@
-! version = 2.0
+> topic restaurante
 
-+ hola
-- Hola, esta es la información que te puedo ofrecer sobre nuestro restaurante\n
-^ Nuestros telefonos\n
-^ Nuestra direccion\n
-^ Entregas\n
-^ Pagina web\n
-^ Horarios\n
-^ Menu\n
+    + hola{weight=10}
+    - Hola, esta es la información que te puedo ofrecer sobre nuestro restaurante\n
+    ^ Nuestros telefonos\n
+    ^ Nuestra direccion\n
+    ^ Entregas\n
+    ^ Pagina web\n
+    ^ Horarios\n
+    ^ Menu\n
 
-! var lunes = Menu del Lunes\n 
-^ Pollo a la plancha con puré $ 5.000 \n 
-^ Completos italianos $ 2.500 \n
+    ! var lunes = Menu del Lunes\n 
+    ^ Pollo a la plancha con puré $ 5.000 \n 
+    ^ Completos italianos $ 2.500 \n
 
-! var martes = Menu del Martes \n
-^ Empanadas de carne $ 2.000 \n
-^ Arroz con carne a la olla $ 8.000 \n
+    ! var martes = Menu del Martes \n
+    ^ Empanadas de carne $ 2.000 \n
+    ^ Arroz con carne a la olla $ 8.000 \n
 
-! var miercoles = Menu del Miercoles \n
-^ Ensalada chilena con pollo $ 5.500 \n
-^ Pescado frito con arroz $ 8.000 \n
+    ! var miercoles = Menu del Miercoles \n
+    ^ Ensalada chilena con pollo $ 5.500 \n
+    ^ Pescado frito con arroz $ 8.000 \n
 
-! var jueves = Menu del Jueves \n
-^ Bistec a lo pobre $ 7.500 \n
-^ Caldillo de congrio $ 5.000 \n
+    ! var jueves = Menu del Jueves \n
+    ^ Bistec a lo pobre $ 7.500 \n
+    ^ Caldillo de congrio $ 5.000 \n
 
-! var viernes = Menu del Viernes \n
-^ Lasaña $ 5.000 \n
-^ Pizza $ 6.000 \n
+    ! var viernes = Menu del Viernes \n
+    ^ Lasaña $ 5.000 \n
+    ^ Pizza $ 6.000 \n
 
-! var sabado = Menu del Sabado \n
-^ Cuarto de pollo con papas $ 7.000 \n
-^ Fideos con pollo asado $ 6.500 \n
+    ! var sabado = Menu del Sabado \n
+    ^ Cuarto de pollo con papas $ 7.000 \n
+    ^ Fideos con pollo asado $ 6.500 \n
 
-! var domingo = Los domingo esta cerrado
+    ! var domingo = Los domingo esta cerrado
 
-! var horario = Lunes abrimos de 08:00 a 18:00\n
-^ Martes abrimos de 08:00 a 18:00\n
-^ Miercoles abrimos de 08:00 a 18:00\n
-^ Jueves abrimos de 08:00 a 18:00\n
-^ Viernes abrimos de 08:00 a 18:00\n
-^ Sabados abrimos de 08:00 a 12:00\n
-^ Domingos Cerrado\n
+    ! var horario = Lunes abrimos de 08:00 a 18:00\n
+    ^ Martes abrimos de 08:00 a 18:00\n
+    ^ Miercoles abrimos de 08:00 a 18:00\n
+    ^ Jueves abrimos de 08:00 a 18:00\n
+    ^ Viernes abrimos de 08:00 a 18:00\n
+    ^ Sabados abrimos de 08:00 a 12:00\n
+    ^ Domingos Cerrado\n
 
-+ [*] no{weight=3} [*]
-- <bot no>
+    + [*] no{weight=3} [*]
+    - <bot no>
 
-+ [*] lunes{weight=2} [*]
-- <bot lunes>
+    + [*] lunes{weight=2} [*]
+    - <bot lunes>
 
-+ [*] martes{weight=2} [*]
-- <bot martes>
+    + [*] martes{weight=2} [*]
+    - <bot martes>
 
-+ [*] miercoles{weight=2} [*]
-- <bot miercoles>
+    + [*] miercoles{weight=2} [*]
+    - <bot miercoles>
 
-+ [*] jueves{weight=2} [*]
-- <bot jueves>
+    + [*] jueves{weight=2} [*]
+    - <bot jueves>
 
-+ [*] viernes{weight=2} [*]
-- <bot viernes>
+    + [*] viernes{weight=2} [*]
+    - <bot viernes>
 
-+ [*] sabado{weight=2} [*]
-- <bot sabado>
+    + [*] sabado{weight=2} [*]
+    - <bot sabado>
 
-+ [*] domingo{weight=2} [*]
-- <bot domingo>
+    + [*] domingo{weight=2} [*]
+    - <bot domingo>
 
-+ [*] (menu|carta) [*]
-- <bot lunes> \n <bot martes> \n <bot miercoles> \n <bot jueves> \n <bot viernes> \n <bot sabado> \n <bot domingo>
+    + [*] (menu|carta) [*]{weight=5}
+    - <bot lunes> \n <bot martes> \n <bot miercoles> \n <bot jueves> \n <bot viernes> \n <bot sabado> \n <bot domingo>
 
-+ [*] (telefono|celular|cel) [*]
-- Nuestro telefono es +569 42817429
+    + [*] (telefono|celular|cel) [*]{weight=3}
+    - Nuestro telefono es +569 42817429
 
-+ [*] (direccion|ubicacion|lugar) [*]
-- Nuestra direccion Colonia Alpino #3214
-- Nos encontramos ubicados en la Colonia Alpino #3214
+    + [*] (direccion|ubicacion|lugar) [*]{weight=3}
+    - Nuestra direccion es Colonia Alpino #3214
+    - Nos encontramos ubicados en la Colonia Alpino #3214
 
-+ [*] (entregas|a domicilio) [*]
-- Realizamos entregas a domicilio solo de lunes a viernes de 12:00 a 15:00
+    + [*] (entregas|a domicilio) [*]{weight=3}
+    - Realizamos entregas a domicilio solo de lunes a viernes de 12:00 a 15:00
 
-+ [*] (pagina web|web|pagina) [*]
-- Visitanos en https://www.picada-animal.cl
+    + [*] (pagina web|web|pagina) [*]{weight=3}
+    - Visítanos en https://www.picada-animal.cl
 
-+ [*] (hora|horarios|dias|abierto){weight=3} [*]
-- <bot horario>
+    + [*] (hora|horarios|dias|abierto){weight=5} [*]
+    - <bot horario>
 
-+ no [*] (menu|carta) [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]{weight=6}
-- Entiendo, de que dia te gustaria ver la carta ?
+    + no [*] (menu|carta) [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]{weight=6}
+    - Entiendo, de qué día te gustaría ver la carta?
+
+    + volver{weight=1}
+    - Volviendo al inicio. . .\n
+    ^ <set topic=default> {@ hola}
+
+< topic
