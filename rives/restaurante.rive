@@ -70,11 +70,11 @@
     + [*] (telefono|celular|cel){weight=3} [*]
     - Nuestro telefono es +569 42817429
 
-    + [*] (direccion|ubicacion|lugar|ubicados){weight=3} [*]
+    + [*] (direccion|ubicacion|lugar|ubicados|encontrarlos){weight=3} [*]
     - Nuestra direccion es los cisnes #1415
     - Nos encontramos ubicados en los cisnes #1415
 
-    + [*] (entregas|a domicilio){weight=3} [*]
+    + [*] (entregas|a domicilio|delivery){weight=3} [*]
     - Realizamos entregas a domicilio solo de lunes a viernes de 12:00 a 15:00
 
     + [*] (pagina web|web|pagina){weight=3} [*]
