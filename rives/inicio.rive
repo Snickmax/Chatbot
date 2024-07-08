@@ -58,15 +58,15 @@
 
 + [*] (anime|animes) [*]{weight=25}
 - ¡Genial! Hablemos de anime.
-^ <set topic=anime>
+^ <set topic=anime>{@ inicio}
 
 + [*] (peliculas|pelis|movies) [*]{weight=25}
 - ¡Genial! Hablemos de películas.
-^ <set topic=pelis>
+^ <set topic=pelis>{@ inicio}
 
 + [*] (restaurante|comida|restaurant) [*]{weight=25}
 - ¡Genial! Hablemos de comida.
-^ <set topic=restaurante>
+^ <set topic=restaurante>{@ inicio}
 
 + *
 - Lo siento, no entendi. Podrias volver a repetirlo?

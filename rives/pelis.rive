@@ -1,5 +1,12 @@
 > topic pelis
 
+    + inicio
+    - \nBienvenido al apartado de peliculas, las funciones disponibles son las siguientes:\n
+    ^ - Obtener recomendaciones de peliculas\n
+    ^ - Descubrir peliculas para los generos de accion, comedia, drama, animacion, romance y terror\n
+    ^ - Ver la sinopsis de las peliculas disponibles\n\n
+    ^ - Para cambiar de tema debes volver al inicio escribiendo "volver" o "salir"
+
     ! var accion = Películas de Acción\n
     ^ Rápidos y Furiosos 9\n
     ^ Misión Imposible 7
@@ -24,41 +31,40 @@
     ^ Siniestro\n
     ^ Terrifier
 
-
-    + [*] (cuentame mas|de que trata|cuentame sobre) [*] rapidos y furiosos 9 [*]
+    + [*] (cuentame|de que trata) [*] rapidos y furiosos 9 [*]
     - Dom Toretto lleva una vida tranquila con Letty y su hijo, el pequeño Brian, pero saben que el peligro siempre acecha en su pacífico horizonte. Esta vez, esa amenaza obligará a Dom a enfrentarse a los pecados de su pasado si quiere salvar a los que más ama.
 
-    + [*] (cuentame mas|de que trata|cuentame sobre) [*] mision imposible 7 [*]
+    + [*] (cuentame|de que trata) [*] mision imposible 7 [*]
     - La séptima entrega de la serie de Misión Imposible sigue a Ethan Hunt y su equipo enfrentando una de sus misiones más difíciles hasta la fecha, mientras luchan contra enemigos que amenazan con destruir el mundo tal como lo conocemos.
 
-    + [*] (cuentame mas|de que trata|cuentame sobre) [*] jumanji [*]
+    + [*] (cuentame|de que trata) [*] jumanji [*]
     - En esta secuela, los amigos regresan al mundo de Jumanji para rescatar a uno de los suyos, pero descubren que nada es lo que esperaban. Los jugadores deben enfrentarse a lugares desconocidos y desconcertantes, desde desiertos áridos hasta montañas nevadas, para escapar del juego más peligroso del mundo.
 
-    + [*] (cuentame mas|de que trata|cuentame sobre) [*] bad boys for life [*]
+    + [*] (cuentame|de que trata) [*] bad boys for life [*]
     - Los detectives Mike Lowrey y Marcus Burnett se unen nuevamente para enfrentar una amenaza aún mayor en la ciudad de Miami mientras lidian con nuevos cambios en sus vidas personales y profesionales.
 
-    + [*] (cuentame mas|de que trata|cuentame sobre) [*] 1917 [*]
+    + [*] (cuentame|de que trata) [*] 1917 [*]
     - Durante la Primera Guerra Mundial, dos jóvenes soldados británicos reciben una orden, aparentemente, imposible de ejecutar: en una carrera contra el reloj, deben infiltrarse en territorio enemigo para entregar un mensaje que podría salvar a miles de compañeros.
 
-    + [*] (cuentame mas|de que trata|cuentame sobre) [*] pearl harbor [*]
+    + [*] (cuentame|de que trata) [*] pearl harbor [*]
     - Rafe y Danny, dos pilotos que sobrevivieron al bombardeo de Pearl Harbor, amigos desde la infancia y luego rivales por el amor de una mujer, deben superar sus diferencias y unirse cuando el gobierno los envía a una misión secreta.
 
-    + [*] (cuentame mas|de que trata|cuentame sobre) [*] los minions [*]
+    + [*] (cuentame|de que trata) [*] los minions [*]
     - Los minions, ingenuos y torpes, buscan un verdadero villano al que servir. A lo largo de una evolución de millones de años, los minions se han puesto al servicio de los amos más despreciables. Kevin, acompañado por el rebelde Stuart y el adorable Bob, emprende un emocionante viaje para conseguir una jefa a quien servir, la terrible Scarlet Overkill.
 
-    + [*] (cuentame mas|de que trata|cuentame sobre) [*] robotdreams [*]
+    + [*] (cuentame|de que trata) [*] robotdreams [*]
     - Dog, un perro de Nueva York, hace un nuevo amigo: Robot, un robot. Sin embargo, cuando un viaje a la playa deja a su amigo oxidado y varado en la arena, Dog lno tiene otro remedio que regresar solo a su antigua vida.
 
-    + [*] (cuentame mas|de que trata|cuentame sobre) [*] amor perruno [*]
+    + [*] (cuentame|de que trata) [*] amor perruno [*]
     - Después de una desastrosa primera cita, Nicole, una joven desenfrenada, y Max, socialmente ansioso, juran borrar el número de teléfono del otro hasta que se enteran de que sus perros han encontrado el amor. ¡Y ahora hay cachorros en camino!
 
-    + [*] (cuentame mas|de que trata|cuentame sobre) [*] pared con pared [*]
+    + [*] (cuentame|de que trata) [*] pared con pared [*]
     - Una joven pianista se prepara para una audición tocando el piano a diario. Al otro lado de la pared de su piso vive un vecino que necesita silencio absoluto para desarrollar su trabajo como inventor de juegos.
 
-    + [*] (cuentame mas|de que trata|cuentame sobre) [*] siniestro [*]
+    + [*] (cuentame|de que trata) [*] siniestro [*]
     - Ellison Oswald, escritor de historias criminales, está en una mala racha; no ha tenido un éxito en más de 10 años y está desesperado. Cuando descubre una película que muestra las muertes de una familia, él promete resolver el misterio. Ellison y su familia se mudan a la casa de las víctimas y se pone a trabajar. Sin embargo, cuando unas imágenes antiguas y otras pistas apuntan a una presencia sobrenatural. Ellison descubre que vivir en esa casa podría costarles la vida.
 
-    + [*] (cuentame mas|de que trata|cuentame sobre) [*] terrifier [*]
+    + [*] (cuentame|de que trata) [*] terrifier [*]
     - En la noche de Halloween, tras una fiesta, Tara y Dawn entran en una pizzería. Tras ellas llega un payaso inquietante y grotesco que hiela la sangre a Tara. Las chicas no tardan en descubrir que es un psicópata sádico que pretende matarlas.
 
     + [*] accion{weight=2}
@@ -76,7 +82,7 @@
     + [*] romance{weight=2}
     - <bot romance>
 
-    + [*] terror{weight=2}
+    + [*] (terror|miedo){weight=2}
     - <bot terror>
 
     + [*] (recomiendame|recomiendas|recomienda) [*]
@@ -106,7 +112,7 @@
     - Recuerda que soy un robot, me podrias preguntar de otra forma
     - Intenta hacer tu pregunta de otra manera.
 
-    + volver{weight=1}
+    + (volver|salir|exit){weight=1}
     - Volviendo al inicio. . .\n
     ^ <set topic=default> {@ hola}
 < topic

@@ -1,13 +1,13 @@
 > topic restaurante
 
-    + hola{weight=10}
-    - Hola, esta es la información que te puedo ofrecer sobre nuestro restaurante\n
-    ^ Nuestros telefonos\n
-    ^ Nuestra direccion\n
-    ^ Entregas\n
-    ^ Pagina web\n
-    ^ Horarios\n
-    ^ Menu\n
+    + inicio
+    - \nBienvenido al apartado de restaurante, las funciones disponibles son las siguientes:\n
+    ^ - Nuestros telefonos\n
+    ^ - Nuestra direccion\n
+    ^ - Pagina web\n
+    ^ - Horarios\n
+    ^ - Menu\n\n
+    ^ - Para cambiar de tema debes volver al inicio escribiendo "volver" o "salir"
 
     ! var lunes = Menu del Lunes\n 
     ^ Pollo a la plancha con puré $ 5.000 \n 
@@ -43,53 +43,53 @@
     ^ Sabados abrimos de 08:00 a 12:00\n
     ^ Domingos Cerrado\n
 
-    + [*] no{weight=3} [*]
+    + [*] no{weight=10} [*]
     - <bot no>
 
-    + [*] lunes{weight=2} [*]
+    + [*] lunes{weight=8} [*]
     - <bot lunes>
 
-    + [*] martes{weight=2} [*]
+    + [*] martes{weight=8} [*]
     - <bot martes>
 
-    + [*] miercoles{weight=2} [*]
+    + [*] miercoles{weight=8} [*]
     - <bot miercoles>
 
-    + [*] jueves{weight=2} [*]
+    + [*] jueves{weight=8} [*]
     - <bot jueves>
 
-    + [*] viernes{weight=2} [*]
+    + [*] viernes{weight=8} [*]
     - <bot viernes>
 
-    + [*] sabado{weight=2} [*]
+    + [*] sabado{weight=8} [*]
     - <bot sabado>
 
-    + [*] domingo{weight=2} [*]
+    + [*] domingo{weight=8} [*]
     - <bot domingo>
 
-    + [*] (menu|carta) [*]{weight=5}
+    + [*] (menu|carta){weight=5} [*]
     - <bot lunes> \n <bot martes> \n <bot miercoles> \n <bot jueves> \n <bot viernes> \n <bot sabado> \n <bot domingo>
 
-    + [*] (telefono|celular|cel) [*]{weight=3}
+    + [*] (telefono|celular|cel){weight=3} [*]
     - Nuestro telefono es +569 42817429
 
-    + [*] (direccion|ubicacion|lugar) [*]{weight=3}
+    + [*] (direccion|ubicacion|lugar|ubicados){weight=3} [*]
     - Nuestra direccion es Colonia Alpino #3214
     - Nos encontramos ubicados en la Colonia Alpino #3214
 
-    + [*] (entregas|a domicilio) [*]{weight=3}
+    + [*] (entregas|a domicilio){weight=3} [*]
     - Realizamos entregas a domicilio solo de lunes a viernes de 12:00 a 15:00
 
-    + [*] (pagina web|web|pagina) [*]{weight=3}
+    + [*] (pagina web|web|pagina){weight=3} [*]
     - Visítanos en https://www.picada-animal.cl
 
     + [*] (hora|horarios|dias|abierto){weight=5} [*]
     - <bot horario>
 
-    + no [*] (menu|carta) [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]{weight=6}
+    + no{weight=6} [*] (menu|carta) [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]
     - Entiendo, de qué día te gustaría ver la carta?
 
-    + volver{weight=1}
+    + (volver|salir|exit){weight=1}
     - Volviendo al inicio. . .\n
     ^ <set topic=default> {@ hola}
 
