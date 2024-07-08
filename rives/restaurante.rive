@@ -43,28 +43,25 @@
     ^ Sabados abrimos de 08:00 a 12:00\n
     ^ Domingos Cerrado\n
 
-    + [*] no{weight=10} [*]
-    - <bot no>
-
-    + [*] lunes{weight=8} [*]
+    + [*] lunes{weight=15} [*]
     - <bot lunes>
 
-    + [*] martes{weight=8} [*]
+    + [*] martes{weight=15} [*]
     - <bot martes>
 
-    + [*] miercoles{weight=8} [*]
+    + [*] miercoles{weight=15} [*]
     - <bot miercoles>
 
-    + [*] jueves{weight=8} [*]
+    + [*] jueves{weight=15} [*]
     - <bot jueves>
 
-    + [*] viernes{weight=8} [*]
+    + [*] viernes{weight=15} [*]
     - <bot viernes>
 
-    + [*] sabado{weight=8} [*]
+    + [*] sabado{weight=15} [*]
     - <bot sabado>
 
-    + [*] domingo{weight=8} [*]
+    + [*] domingo{weight=15} [*]
     - <bot domingo>
 
     + [*] (menu|carta){weight=5} [*]
@@ -74,23 +71,35 @@
     - Nuestro telefono es +569 42817429
 
     + [*] (direccion|ubicacion|lugar|ubicados){weight=3} [*]
-    - Nuestra direccion es Colonia Alpino #3214
-    - Nos encontramos ubicados en la Colonia Alpino #3214
+    - Nuestra direccion es los cisnes #1415
+    - Nos encontramos ubicados en los cisnes #1415
 
     + [*] (entregas|a domicilio){weight=3} [*]
     - Realizamos entregas a domicilio solo de lunes a viernes de 12:00 a 15:00
 
     + [*] (pagina web|web|pagina){weight=3} [*]
-    - Visítanos en https://www.picada-animal.cl
+    - Visítanos en https://www.Todomishis.cl
 
     + [*] (hora|horarios|dias|abierto){weight=5} [*]
     - <bot horario>
 
-    + no{weight=6} [*] (menu|carta) [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]
+    + [*] no{weight=25} [*] (lunes|martes|miercoles|jueves|viernes|sabado|domingo) [*]
     - Entiendo, de qué día te gustaría ver la carta?
+
+    + [*] no quiero{weight=15} [*]
+    - Entiendo, qué te gustaría ver: \n
+    ^ - Nuestros telefonos\n
+    ^ - Nuestra direccion\n
+    ^ - Pagina web\n
+    ^ - Horarios\n
+    ^ - Menu\n\n
+    ^ - Para cambiar de tema debes volver al inicio escribiendo "volver" o "salir"
 
     + (volver|salir|exit){weight=1}
     - Volviendo al inicio. . .\n
     ^ <set topic=default> {@ hola}
+
+    + *
+    - No te entiendo podrias repetirlo.
 
 < topic
