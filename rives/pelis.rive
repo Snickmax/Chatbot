@@ -31,6 +31,32 @@
     ^ Siniestro\n
     ^ Terrifier
 
+    + [*] hola [*]
+    - Hola, cómo te encuentras ?
+
+    + [*] buenos dias{weight=10} [*]
+    - ¡Buenos días! ¿Cómo puedo asistirte hoy?
+
+    + [*] buenas tardes{weight=8} [*]
+    - ¡Buenas tardes! ¿En qué puedo servirte?
+
+    + [*] buenas noches{weight=5} [*]
+    - ¡Buenas noches! ¿Cómo puedo ayudarte?
+
+    + [*] como estas{weight=5} [*]
+    - Estoy bien. ¿Qué necesitas hoy?
+
+    + [*] gracias{weight=5} [*]
+    - ¡De nada! ¿Hay algo más en lo que pueda ayudarte?
+    - ¡De nada! ¿Te gustaría hablar de algo más? \n<bot opciones>
+
+    + [*] adios{weight=5} [*]
+    - ¡Adiós! Espero que tengas un gran día.
+    - ¡Hasta luego! Fue un placer hablar contigo.
+
+    + [*] que tal{weight=5} [*]
+    - Todo bien, gracias por preguntar. ¿En qué puedo asistirte?
+    
     + [*] (cuentame|de que trata) [*] rapidos y furiosos 9 [*]
     - Dom Toretto lleva una vida tranquila con Letty y su hijo, el pequeño Brian, pero saben que el peligro siempre acecha en su pacífico horizonte. Esta vez, esa amenaza obligará a Dom a enfrentarse a los pecados de su pasado si quiere salvar a los que más ama.
 

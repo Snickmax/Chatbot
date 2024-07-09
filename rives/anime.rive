@@ -75,7 +75,7 @@
     + [*] (cuentame|de que trata|hablame|sinopsis) [*] (yuru camp|laid camp) [*]{weight=3}
     - Nadeshiko es una estudiante de preparatoria que se ha mudado de Shizuoka a Yamanashi y que decide ir a ver el famoso monte Fuji que aparece en los billetes de mil yenes. Aunque consigue llegar en bicicleta hasta Motosu, se ve obligada a volver atrás debido al mal tiempo.
 
-    + [*] (cuentame|de que trata|hablame) [*] wind breaker [*]{weight=3}
+    + [*] (cuentame|de que trata|hablame|sinopsis) [*] wind breaker [*]{weight=3}
     - El instituto Fûrin se ha granjeado la peor reputación entre los centros de la zona por tener la media más baja y los alumnos más rebeldes. Haruka Sakura es un joven recién llegado a la ciudad que quiere convertirse en el más fuerte del barrio y así proteger a todos aquellos que le importan. Para conseguir su propósito, lo primero que debe hacer es unirse a una pandilla llamada Wind Breaker, que representa a su instituto y cuyo objetivo es defender la ciudad del resto de bandas y maleantes. Sin embargo, ¡para que lo acepten deberá ganarse el respeto a puñetazos!
 
     + [*] (cuentame|de que trata|hablame|sinopsis) [*] (that time i got reincarnated as a slime|tensei shitara| slime) [*]{weight=3}
@@ -95,6 +95,32 @@
 
     + [*] (cuentame|de que trata|hablame|sinopsis) [*] (the duke of death and his maid|shinigami bocchan to kuro maid) [*]{weight=3}
     - Sigue la historia de un joven duque que fue maldecido por una bruja cuando era niño, obteniendo el poder de matar a cualquier ser vivo cuando lo toca. Por lo que es obligado a vivir en una gran mansión en lo profundo del bosque y tratado como si no existiera.
+
+    + [*] hola [*]
+    - Hola, cómo te encuentras ?
+
+    + [*] buenos dias{weight=10} [*]
+    - ¡Buenos días! ¿Cómo puedo asistirte hoy?
+
+    + [*] buenas tardes{weight=8} [*]
+    - ¡Buenas tardes! ¿En qué puedo servirte?
+
+    + [*] buenas noches{weight=5} [*]
+    - ¡Buenas noches! ¿Cómo puedo ayudarte?
+
+    + [*] como estas{weight=5} [*]
+    - Estoy bien. ¿Qué necesitas hoy?
+
+    + [*] gracias{weight=5} [*]
+    - ¡De nada! ¿Hay algo más en lo que pueda ayudarte?
+    - ¡De nada! ¿Te gustaría hablar de algo más? \n<bot opciones>
+
+    + [*] adios{weight=5} [*]
+    - ¡Adiós! Espero que tengas un gran día.
+    - ¡Hasta luego! Fue un placer hablar contigo.
+
+    + [*] que tal{weight=5} [*]
+    - Todo bien, gracias por preguntar. ¿En qué puedo asistirte?
 
     + [*] (anime|animes|series) [*] lunes{weight=5}
     - <bot lunesanime>
